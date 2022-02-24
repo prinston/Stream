@@ -1,0 +1,76 @@
+:root {
+  --degree: 0deg;
+  --grad0: rgb(255, 255, 255);
+  --grad1: rgb(255, 255, 255);
+  --grad2: rgb(255, 255, 255);
+  --grad3: rgb(255, 255, 255);
+  --grad4: rgb(255, 255, 255);
+}
+
+* {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  mask-type: luminance;
+  mask-mode: luminance;
+  transition: all ease-in-out 50ms;
+  font-family: 'Impact';
+}
+
+html {
+  width: 1920px;
+  height: 1080px;
+}
+
+body {
+  background: linear-gradient(var(--degree), var(--grad0), var(--grad1), var(--grad2), var(--grad3), var(--grad4));
+  background-size: 1000% 1000%;
+  animation: gradientAnim 600s ease infinite;
+}
+
+#title, #subtitle {
+  background: linear-gradient(var(--degree), var(--grad0), var(--grad1), var(--grad2), var(--grad3), var(--grad4));
+  background-size: 1000% 1000%;
+  animation: gradientAnim 600s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1000;
+  position: absolute;
+}
+
+#notification {
+  opacity: 0;
+  transition: opacity ease-in-out 500ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1080px;
+  width: 1920px;
+  background: linear-gradient(var(--degree), var(--grad0), var(--grad1), var(--grad2), var(--grad3), var(--grad4));
+  background-size: 1000% 1000%;
+  animation: gradientAnim 600s ease infinite;
+}
+
+#title {
+  top: 900px;
+  left: 175px;
+  font-size: 7em;
+}
+
+#subtitle {
+  top: 1025px;
+  left: 50px;
+  font-size: 1.5em;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes gradientAnim {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}

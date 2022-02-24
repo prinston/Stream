@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'></meta>
+    <title>Stream Background</title>
+    <link rel='stylesheet' type='text/css' href='background.css'></link>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js' type='text/javascript'></script>
+    <script type='text/javascript' src='background.js'></script>
+  </head>
+  <body>
+    <svg width='1920' height='1080'>
+      <mask id='clip'>
+        <rect x='0' y='0' width='1920' height='1080' fill='white'></rect>
+		    <image href='border-chat.png' height='1080' width='1920'/>
+        <image href='logo.svg' />
+        <svg id='logo' x='1664.5' viewBox='0 0 100 85' width=205px>
+          <path d='M 50 00 L 69 48 L 100 15 L 80 69 H 50' fill='black'/> <!-- Left side main crown -->
+          <path d='M 50 00 L 31 48 L 0 15 L 20 69 H 50' fill='black'/> <!-- Right side main crown -->
+          <path d='M 30 43 L 34 31 L 27 10 L 19 30 Z'  fill='black'/> <!-- Back right crown -->
+          <path d='M 70 43 L 66 31 L 73 10 L 81 30 Z'  fill='black'/> <!-- Back right crown -->
+          <path d='M 50 85 L 80 80 H 20 Z' fill='black'/> <!-- Layer 2 bar -->
+          <path d='M 20 77 H 80 V 72 H 20 Z' fill='black'/> <!-- Layer 3 point -->
+        </svg>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <circle></circle>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <polygon></polygon>
+        <g id='notification'>
+          <image id='icon' href='../Resources/twitch.svg' x='10' y='1000' height='40'></image>
+          <text id='title' x='60' y='1040'>Username!</text>
+          <text id='subtitle' x='10' y='1070'>Message from the user or about the information they have done</text>
+        </g>
+        <rect x='10' y='10' width='1619' height='911' fill='white'></rect>
+        <text id='title' x='30' y='70'>10px X 10px to corner</text>
+        <text id='title' x='590' y='500'>1619px X 911px for size</text>
+      </mask>
+      <image id='background' href='../Resources/background.png' x='0' y='0' width='1920' height='1080'></image>
+    </svg>
+  </body>
+</html>
